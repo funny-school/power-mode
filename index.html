@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power Mode – Typing Effects & Keyboard Sounds for Chrome</title>
+<meta name="description" content="Free Chrome extension that makes typing fun: sparks at your cursor, combo counter, WPM, personal records and mechanical keyboard sounds on any website.">
+<link rel="icon" href="img/icon-128.png">
+<meta property="og:title" content="Power Mode – Typing Effects & Keyboard Sounds">
+<meta property="og:description" content="Sparks, combos, WPM and keyboard sounds while you type – on any website. Free for Chrome.">
+<meta property="og:image" content="img/promo-marquee-1400x560.png">
+<style>
+  :root { --bg: #140c0a; --card: #22140f; --line: #3d261d; --text: #fff4ec; --muted: #d4b5a6; --a1: #ffd166; --a2: #ff7a2f; --a3: #ff3d6e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: radial-gradient(1200px 600px at 85% -10%, #5a1e1255, transparent 60%), var(--bg); color: var(--text); font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  a { color: var(--a1); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { display: flex; align-items: center; gap: 12px; padding: 20px 0; }
+  header img { width: 40px; height: 40px; }
+  header b { font-size: 20px; flex: 1; }
+  header nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+  .hero { display: grid; grid-template-columns: 1fr 1.25fr; gap: 40px; align-items: center; padding: 40px 0 30px; }
+  h1 { font-size: 54px; line-height: 1.05; margin: 0 0 16px; letter-spacing: -.02em; }
+  .g { background: linear-gradient(90deg, var(--a1), var(--a2), var(--a3)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0 0 26px; }
+  .cta { display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 14px; font-weight: 800; font-size: 18px; color: #1a0b08; text-decoration: none; background: linear-gradient(90deg, var(--a1), var(--a2) 55%, var(--a3)); box-shadow: 0 10px 30px #ff7a2f44; }
+  .cta:hover { filter: brightness(1.08); }
+  .note { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .hero img { width: 100%; border-radius: 16px; box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+  h2 { font-size: 34px; margin: 70px 0 22px; letter-spacing: -.01em; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  .card .e { font-size: 28px; }
+  .card b { display: block; margin: 6px 0 4px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .shots img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+  footer { margin: 70px 0 0; padding: 26px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; }
+  footer a { color: var(--muted); }
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; }
+    h1 { font-size: 40px; }
+    .grid, .shots { grid-template-columns: 1fr; }
+    header nav { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/icon-128.png" alt="">
+    <b>Power Mode</b>
+    <nav><a href="#features">Features</a><a href="#faq">FAQ</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Make typing feel like a <span class="g">game</span> 🔥</h1>
+      <p class="lead">Sparks fly from your cursor, your combo climbs as you type, and your keyboard sounds like a mechanical one – on any website.</p>
+      <a class="cta" href="CWS_URL">Add to Chrome – it's free</a>
+      <div class="note">No account. Nothing you type is saved or sent.</div>
+    </div>
+    <img src="img/screenshot-1.png" alt="Power Mode sparks and a 100 combo while typing in a notes app">
+  </section>
+
+  <h2 id="features">Everything in one tiny extension</h2>
+  <div class="grid">
+    <div class="card"><div class="e">✨</div><b>10 spark styles</b><p>Fire, Letters, Rainbow, Neon, Gold, Ice, Emoji, Pixel, Hearts and your text color.</p></div>
+    <div class="card"><div class="e">✍️</div><b>Flying letters</b><p>Every key you press pops out of the text box and flies away.</p></div>
+    <div class="card"><div class="e">🔥</div><b>Combo counter</b><p>Keep typing to build your combo. Stop for 3 seconds and it resets.</p></div>
+    <div class="card"><div class="e">⌨️</div><b>7 keyboard sounds</b><p>Mechanical, Thock, Typewriter, Piano, 8-bit, Laser and Bubble – with a volume slider.</p></div>
+    <div class="card"><div class="e">🏆</div><b>Records & WPM</b><p>Live typing speed, best combo, best WPM and words typed today.</p></div>
+    <div class="card"><div class="e">🛡️</div><b>Private & light</b><p>Password fields are ignored. Effects scale down automatically on slower computers.</p></div>
+  </div>
+
+  <h2>See it in action</h2>
+  <div class="shots">
+    <img src="img/screenshot-2.png" alt="Letters flying out of a text box">
+    <img src="img/screenshot-3.png" alt="New record callout in a chat box">
+    <img src="img/screenshot-4.png" alt="Hearts and emoji in a search bar and comment box">
+    <img src="img/screenshot-5.png" alt="Power Mode settings popup">
+  </div>
+
+  <h2 id="faq">FAQ</h2>
+  <details><summary>Does Power Mode read or save what I type?</summary><p>No. Letters are only drawn on your screen for the effect and then disappear. Nothing you type is stored or sent anywhere, and password fields are always ignored. The only things saved – on your own computer – are your settings and three numbers: best combo, best WPM and words typed today.</p></details>
+  <details><summary>Where does it work?</summary><p>In text boxes on almost any website: search bars, chats, comments, emails, notes and forms. Chrome doesn't allow extensions on chrome:// pages or the Chrome Web Store.</p></details>
+  <details><summary>Why don't I hear any sound?</summary><p>Sounds are off by default. Click the Power Mode icon in your toolbar and pick a keyboard sound.</p></details>
+  <details><summary>Can I turn it off on one website?</summary><p>Yes – open the popup on that website and switch off "On for this site".</p></details>
+  <details><summary>Is it free?</summary><p>Yes, completely free.</p></details>
+
+  <footer>
+    <span>© 2026 Power Mode</span>
+    <span><a href="privacy.html">Privacy policy</a> · <a href="CWS_URL">Chrome Web Store</a> · <a href="https://funny-school.github.io/">Free games</a></span>
+  </footer>
+</div>
+</body>
+</html>
